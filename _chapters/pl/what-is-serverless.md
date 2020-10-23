@@ -8,7 +8,7 @@ description: Serverless odnosi się do aplikacji, w których zarządzanie oraz a
 comments_id: what-is-serverless/27
 ---
 
-Zazwyczaj budujemy i wdrażamy aplikacje internetowe, w których mamy pewien stopień kontroli nad żądaniami HTTP kierowanymi do naszego serwera. Nasza aplikacja działa na tym serwerze, a my odpowiadamy za udostępnianie i zarządzanie zasobami dla niej. Z tym podejściem wiąże się kilka problemów.
+Zazwyczaj budujemy i wdrażamy aplikacje webowe, w których mamy pewien stopień kontroli nad żądaniami HTTP kierowanymi do serwera. Aplikacja działa na naszym serwerze, a my odpowiadamy za zapewnienie niezbędnych zasobów i zarządzanie nimi. Z tym podejściem wiąże się kilka problemów.
 
 1. Jesteśmy obciążani kosztami utrzymania serwera nawet wtedy, gdy nie obsługujemy żadnych żądań. 
 
@@ -18,7 +18,7 @@ Zazwyczaj budujemy i wdrażamy aplikacje internetowe, w których mamy pewien sto
 
 4. Wraz ze wzrostem obciążenia musimy zarządzać skalowaniem naszego serwera w górę. A co za tym idzie, musimy zarządzać skalowaniem w dół, gdy nie mamy tak dużego obciążenia.
 
-W przypadku mniejszych firm i indywidualnych deweloperów może to się okazać trudne do wykonania. W rezultacie nie skupiamy się na zadaniach ważniejszych: budowaniu i utrzymaniu aplikacji. W większych organizacjach zajmuje się tym zespół ds. infrastruktury i zwykle nie jest to obowiązkiem samego dewelopera. Procesy związane z zarządzaniem serwerami mogą niestety spowolnić prace nad aplikacją, ponieważ nie możesz po prostu zbudować aplikacji bez współpracy z zespołem ds. infrastruktury, który pomoże Ci rozpocząć pracę. Będąc programistami szukaliśmy rozwiązania tego problemu, i właśnie tu pojawia się technologia serverless.
+W przypadku mniejszych firm i indywidualnych deweloperów może to się okazać trudne do wykonania. W rezultacie nie skupiamy się na zadaniach ważniejszych: budowaniu i utrzymaniu aplikacji. W większych organizacjach zajmuje się tym zespół ds. infrastruktury i zwykle nie jest to obowiązkiem samego dewelopera. Procesy związane z zarządzaniem serwerami mogą niestety spowolnić prace nad aplikacją, ponieważ nie możesz po prostu zbudować aplikacji bez współpracy z zespołem ds. infrastruktury, który pomoże Ci rozpocząć pracę. Jako deweloperzy szukaliśmy rozwiązania tego problemu, i właśnie tu pojawia się technologia serverless.
 
 ### Serverless computing
 
@@ -28,9 +28,9 @@ Serverless computing (w skrócie serverless) to model, w którym dostawca chmury
 - Microsoft Azure: [Azure Functions](https://azure.microsoft.com/en-us/services/functions/)
 - Google Cloud: [Cloud Functions](https://cloud.google.com/functions/)
 
-Mimo to, że serverless abstrahuje od zasadniczej infrastruktury, serwery nadal są zaangażowane w wykonywanie naszych funkcji. 
+Mimo to, że pojęcie infrastruktury w serverless jest abstrakcyjne, serwery nadal są zaangażowane w wykonywanie naszych funkcji. 
 
-Jako, że Twój kod będzie wykonywany właśnie jako pojedyncze funkcje, jest kilka pojęć, które musimy wyjaśnić.
+Jako, że Twój kod będzie wykonywany właśnie w ramach pojedynczych funkcji, jest kilka pojęć, które musimy wyjaśnić.
 
 ### Mikroserwisy
 
