@@ -48,6 +48,6 @@ Z uwagi na to, że funkcje uruchamiane są w kontenerze, który jest tworzony na
 
 Czas trwania cold startu zależy od implementacji danego dostawcy chmury. W przypadku AWS Lambda może wynieść od kilkuset milisekund do kilku sekund. Czas może się różnić w zależności od używanego środowiska uruchomieniowego (lub języka), rozmiaru funkcji (jako pakietu) i oczywiście od danego dostawcy chmury. Cold starty znacznie się poprawiły na przestrzeni lat, jako że dostawcom usług w chmurze udało się zoptymalizować czasy opóźnienia przesyłu.
 
-Oprócz optymalizacji funkcji możesz wykorzystać proste tricki, jak na przykład pomocniczą, zaplanowaną funkcję, która będzie wywoływać Twoje właściwe funkcje co kilka minut, i tym samym utrzyma je w trybie rozgrzanym (ang. warm). [Framework Serverless](https://serverless.com), którego będziemy używać w tym samouczku, ma kilka wtyczek, które [pomagają utrzymać funkcje w trybie rozgrzanym](https://github.com/FidelLimited/serverless-plugin-warmup).
+Oprócz optymalizacji funkcji możesz wykorzystać proste tricki, jak na przykład pomocniczą, zaplanowaną funkcję, która będzie wywoływać Twoje właściwe funkcje co kilka minut, i tym samym utrzyma je w trybie rozgrzanym. [Framework Serverless](https://serverless.com), którego będziemy używać w tym samouczku, ma kilka wtyczek, które [pomagają utrzymać funkcje w trybie rozgrzanym](https://github.com/FidelLimited/serverless-plugin-warmup).
 
-A teraz, gdy mamy już większe pojęcie o serverless, przyjrzyjmy się dokładniej czym jest funkcja Lambda i w jaki sposób będzie wykonywany Twój kod.
+Teraz, gdy mamy lepsze pojęcie o serverless, przyjrzyjmy się dokładniej czym jest funkcja Lambda i w jaki sposób będzie wykonywany Twój kod.
