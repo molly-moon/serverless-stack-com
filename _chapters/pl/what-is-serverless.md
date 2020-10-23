@@ -40,7 +40,7 @@ Największą zmianą, przed którą stoimy przechodząc do świata serverless, j
 
 Twoje funkcje są uruchamiane w bezpiecznych, (prawie) bezstanowych kontenerach. Oznacza to, że nie będziesz w stanie wykonać kodu na serwerze aplikacji długo po zakończeniu zdarzenia wyzwalającego, lub używając kontekstu poprzedniego wykonania do obsługi nowego żądania. Musisz założyć, że Twoja funkcja jest wywoływana za każdym razem w nowym kontenerze. 
 
-Istnieją jednak pewne niuanse z tym związane; omówimy je w rozdziale [Co to jest AWS Lambda?] ({% link _chapters / what-is-aws-lambda.md%}).
+Istnieją jednak pewne niuanse z tym związane; omówimy je w rozdziale [Co to jest AWS Lambda?]({% link _chapters / what-is-aws-lambda.md%}).
 
 ### Cold starty
 
@@ -48,6 +48,6 @@ Z uwagi na to, że funkcje uruchamiane są w kontenerze, który jest tworzony na
 
 Czas trwania cold startu zależy od implementacji danego dostawcy chmury. W przypadku AWS Lambda może wynieść od kilkuset milisekund do kilku sekund. Czas może się różnić w zależności od używanego środowiska uruchomieniowego (lub języka), rozmiaru funkcji (jako pakietu) i oczywiście od danego dostawcy chmury. Cold starty znacznie się poprawiły na przestrzeni lat, jako że dostawcom usług w chmurze udało się zoptymalizować czasy opóźnienia przesyłu.
 
-Oprócz optymalizacji funkcji możesz wykorzystać proste tricki, jak na przykład pomocniczą, zaplanowaną funkcję, która będzie wywoływać Twoje właściwe funkcje co kilka minut, i tym samym utrzyma je w trybie rozgrzanym (ang. warm). [Framework Serverless] (https://serverless.com), którego będziemy używać w tym samouczku, ma kilka wtyczek, które [pomagają utrzymać funkcje w trybie rozgrzanym] (https://github.com/FidelLimited/serverless-plugin-warmup).
+Oprócz optymalizacji funkcji możesz wykorzystać proste tricki, jak na przykład pomocniczą, zaplanowaną funkcję, która będzie wywoływać Twoje właściwe funkcje co kilka minut, i tym samym utrzyma je w trybie rozgrzanym (ang. warm). [Framework Serverless](https://serverless.com), którego będziemy używać w tym samouczku, ma kilka wtyczek, które [pomagają utrzymać funkcje w trybie rozgrzanym](https://github.com/FidelLimited/serverless-plugin-warmup).
 
-A teraz, mając już dobre pojęcie o serverless, przyjrzyjmy się dokładniej czym jest funkcja Lambda i w jaki sposób będzie wykonywany Twój kod.
+A teraz, mając większe pojęcie o serverless, przyjrzyjmy się dokładniej czym jest funkcja Lambda i w jaki sposób będzie wykonywany Twój kod.
