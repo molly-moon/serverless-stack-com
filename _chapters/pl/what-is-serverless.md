@@ -50,4 +50,4 @@ Czas trwania cold startu zależy od implementacji danego dostawcy chmury. W przy
 
 Oprócz optymalizacji funkcji możesz wykorzystać proste tricki, jak na przykład pomocniczą, zaplanowaną funkcję, która będzie wywoływać Twoje właściwe funkcje co kilka minut, i tym samym utrzyma je w trybie rozgrzanym (ang. warm). [Framework Serverless](https://serverless.com), którego będziemy używać w tym samouczku, ma kilka wtyczek, które [pomagają utrzymać funkcje w trybie rozgrzanym](https://github.com/FidelLimited/serverless-plugin-warmup).
 
-A teraz, mając większe pojęcie o serverless, przyjrzyjmy się dokładniej czym jest funkcja Lambda i w jaki sposób będzie wykonywany Twój kod.
+A teraz, gdy mamy już większe pojęcie o serverless, przyjrzyjmy się dokładniej czym jest funkcja Lambda i w jaki sposób będzie wykonywany Twój kod.
