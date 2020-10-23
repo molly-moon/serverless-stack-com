@@ -30,15 +30,15 @@ Serverless computing (w skrócie serverless) to model, w którym dostawca chmury
 
 Mimo to, że serverless abstrahuje od zasadniczej infrastruktury, serwery nadal są zaangażowane w wykonywanie naszych funkcji. 
 
-Jako, że Twój kod będzie wykonywany jako pojedyncze funkcje, jest kilka rzeczy, które musimy poruszyć.
+Jako, że Twój kod będzie wykonywany właśnie jako pojedyncze funkcje, jest kilka pojęć, które musimy wyjaśnić.
 
 ### Mikroserwisy
 
-Największą zmianą, przed którą stoimy przechodząc do świata serverless, jest to, że nasza aplikacja musi mieć architekturę w postaci funkcji. Być może jesteś przyzwyczajony do wdrażania aplikacji jako pojedynczej monolitycznej aplikacji Rails lub Express. Tymczasem w świecie serverless zazwyczaj wymagane jest przyjęcie architektury opartej na mikrousługach. Możesz obejść ten wymóg, uruchamiając całą aplikację w pojedynczej funkcji jako monolit i samodzielnie obsługując routing. Niemniej jednak nie jest to zalecane, ponieważ znacznie lepiej jest tworzyć funkcje o małych rozmiarach. Wyjaśnimy to poniżej.
+Największą zmianą, przed którą stoimy przechodząc do świata serverless, jest to, że architektura naszej aplikacji musi mieć postać funkcji. Być może jesteś przyzwyczajony do wdrażania aplikacji jako pojedynczej monolitycznej aplikacji Rails lub Express. Tymczasem w świecie serverless zazwyczaj wymagane jest przyjęcie architektury opartej na mikrousługach. Możesz obejść ten wymóg, uruchamiając całą aplikację za pomocą jednej funkcji jako monolit i samodzielnie obsługując routing. Niemniej jednak, nie jest to zalecane, ponieważ znacznie lepiej jest tworzyć funkcje o małych rozmiarach. Wyjaśnimy to poniżej.
 
 ### Funkcje bezstanowe
 
-Twoje funkcje są zwykle uruchamiane w bezpiecznych, (prawie) bezstanowych kontenerach. Oznacza to, że nie będziesz w stanie wykonać kodu na serwerze aplikacji długo po zakończeniu zdarzenia wyzwalającego lub używając kontekstu poprzedniego wykonania do obsługi żądania. Musisz założyć, że Twoja funkcja jest wywoływana za każdym razem w nowym kontenerze. 
+Twoje funkcje są uruchamiane w bezpiecznych, (prawie) bezstanowych kontenerach. Oznacza to, że nie będziesz w stanie wykonać kodu na serwerze aplikacji długo po zakończeniu zdarzenia wyzwalającego, lub używając kontekstu poprzedniego wykonania do obsługi nowego żądania. Musisz założyć, że Twoja funkcja jest wywoływana za każdym razem w nowym kontenerze. 
 
 Istnieją jednak pewne niuanse z tym związane; omówimy je w rozdziale [Co to jest AWS Lambda?] ({% link _chapters / what-is-aws-lambda.md%}).
 
